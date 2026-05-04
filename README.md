@@ -20,7 +20,7 @@ Yueyao is a rare moonlit glass dragon companion for quiet deep work.
 Install Yueyao from this repository:
 
 ```bash
-curl -L "https://github.com/mileson/codex-pets/raw/main/packages/yueyao.codex-pet.zip" -o "/tmp/yueyao.codex-pet.zip" \
+curl -L "https://github.com/mileson/codex-pets/releases/download/v0.1.0/yueyao.codex-pet.zip" -o "/tmp/yueyao.codex-pet.zip" \
   && mkdir -p "$HOME/.codex/pets/yueyao" \
   && unzip -o "/tmp/yueyao.codex-pet.zip" -d "$HOME/.codex/pets/yueyao"
 ```

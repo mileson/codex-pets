@@ -20,7 +20,7 @@ Yueyao 是一只稀有的月光琉璃龙，适合安静陪伴你深度工作。
 从 GitHub 下载并安装 Yueyao：
 
 ```bash
-curl -L "https://github.com/mileson/codex-pets/raw/main/packages/yueyao.codex-pet.zip" -o "/tmp/yueyao.codex-pet.zip" \
+curl -L "https://github.com/mileson/codex-pets/releases/download/v0.1.0/yueyao.codex-pet.zip" -o "/tmp/yueyao.codex-pet.zip" \
   && mkdir -p "$HOME/.codex/pets/yueyao" \
   && unzip -o "/tmp/yueyao.codex-pet.zip" -d "$HOME/.codex/pets/yueyao"
 ```
