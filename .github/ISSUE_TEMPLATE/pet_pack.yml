@@ -1,0 +1,28 @@
+name: Pet pack request
+description: Suggest a new Codex pet or improvement.
+title: "[Pet] "
+labels: ["pet"]
+body:
+  - type: input
+    id: pet-name
+    attributes:
+      label: Pet name
+      description: What should this pet be called?
+      placeholder: Yueyao
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: Describe the pet style, mood, and any animation ideas.
+      placeholder: A calm moonlit dragon with glassy scales.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Add links or notes that help explain the desired look.
+    validations:
+      required: false
