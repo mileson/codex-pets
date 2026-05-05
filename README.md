@@ -3,7 +3,7 @@
 > A growing collection of custom pets for Codex Desktop.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pets](https://img.shields.io/badge/pets-5-blue.svg)](#pets)
+[![Pets](https://img.shields.io/badge/pets-7-blue.svg)](#pets)
 
 [中文说明](README_CN.md)
 
@@ -15,15 +15,25 @@ This gallery is generated from `pets/*/pet.json` and the first frame of each `sp
 
 | Pet | Description | Package |
 | --- | --- | --- |
+| Auruowl | An aurora owl scholar with bright brow feathers for focused review sessions. | [auruowl.codex-pet.zip](packages/auruowl.codex-pet.zip) |
 | CorgiByte | A cheerful short-legged corgi coding buddy with a tiny cyan spark charm. | [corgibyte.codex-pet.zip](packages/corgibyte.codex-pet.zip) |
 | Milkbyte | A warm yellow baby dragon with a cream belly and tiny cyan code-spark accents. | [milkbyte.codex-pet.zip](packages/milkbyte.codex-pet.zip) |
 | Plaidpup | A black shiba pup in a blue plaid shirt with coherent playful poses. | [plaidpup.codex-pet.zip](packages/plaidpup.codex-pet.zip) |
+| Solara | A tiny solar phoenix chick with an ember crest. | [solara.codex-pet.zip](packages/solara.codex-pet.zip) |
 | Vowlet | A quiet blond chain guardian with a focused, watchful presence. | [vowlet.codex-pet.zip](packages/vowlet.codex-pet.zip) |
 | Yueyao | A rare moonlit glass dragon companion for quiet deep work. | [yueyao.codex-pet.zip](packages/yueyao.codex-pet.zip) |
 
 Detailed animation contact sheets live under `assets/<pet-id>/`.
 
 ## Quick Install
+
+Install Auruowl from the repository package:
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/auruowl.codex-pet.zip" -o "/tmp/auruowl.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/auruowl" \
+  && unzip -o "/tmp/auruowl.codex-pet.zip" -d "$HOME/.codex/pets/auruowl"
+```
 
 Install CorgiByte from the repository package:
 
@@ -39,6 +49,14 @@ Install Milkbyte from the repository package:
 curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/milkbyte.codex-pet.zip" -o "/tmp/milkbyte.codex-pet.zip" \
   && mkdir -p "$HOME/.codex/pets/milkbyte" \
   && unzip -o "/tmp/milkbyte.codex-pet.zip" -d "$HOME/.codex/pets/milkbyte"
+```
+
+Install Solara from the repository package:
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/solara.codex-pet.zip" -o "/tmp/solara.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/solara" \
+  && unzip -o "/tmp/solara.codex-pet.zip" -d "$HOME/.codex/pets/solara"
 ```
 
 Install Yueyao from this repository:
@@ -108,9 +126,13 @@ flowchart LR
 codex-pets/
   assets/
     pet-gallery.png
+    auruowl/
+      contact-sheet.png
     corgibyte/
       contact-sheet.png
     milkbyte/
+      contact-sheet.png
+    solara/
       contact-sheet.png
     yueyao/
       contact-sheet.png
@@ -122,16 +144,24 @@ codex-pets/
     generate_pet_gallery.py
   requirements.txt
   packages/
+    auruowl.codex-pet.zip
     corgibyte.codex-pet.zip
     milkbyte.codex-pet.zip
+    solara.codex-pet.zip
     yueyao.codex-pet.zip
     vowlet.codex-pet.zip
     plaidpup.codex-pet.zip
   pets/
+    auruowl/
+      pet.json
+      spritesheet.webp
     corgibyte/
       pet.json
       spritesheet.webp
     milkbyte/
+      pet.json
+      spritesheet.webp
+    solara/
       pet.json
       spritesheet.webp
     yueyao/

@@ -3,7 +3,7 @@
 > Codex Desktop 自定义宠物合集。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pets](https://img.shields.io/badge/pets-5-blue.svg)](#宠物)
+[![Pets](https://img.shields.io/badge/pets-7-blue.svg)](#宠物)
 
 [English](README.md)
 
@@ -15,15 +15,25 @@
 
 | 宠物 | 说明 | 安装包 |
 | --- | --- | --- |
+| Auruowl（极光学者猫头鹰） | 有明亮眉羽的极光学者猫头鹰，适合陪你专注审阅和检查。 | [auruowl.codex-pet.zip](packages/auruowl.codex-pet.zip) |
 | CorgiByte（短腿柯基） | 开朗的短腿柯基代码伙伴，戴着小小青蓝火花挂坠。 | [corgibyte.codex-pet.zip](packages/corgibyte.codex-pet.zip) |
 | Milkbyte（奶黄小龙） | 温暖的黄色奶龙小伙伴，奶油色肚皮和青蓝小火花点缀，适合轻松陪伴工作。 | [milkbyte.codex-pet.zip](packages/milkbyte.codex-pet.zip) |
 | Plaidpup（蓝格衬衫黑柴） | 穿蓝格衬衫的黑柴小伙伴，动作更连贯、适合轻松陪伴。 | [plaidpup.codex-pet.zip](packages/plaidpup.codex-pet.zip) |
+| Solara（太阳小凤凰） | 头顶微光羽冠的太阳小凤凰，适合明亮轻快地陪伴工作。 | [solara.codex-pet.zip](packages/solara.codex-pet.zip) |
 | Vowlet（金发链环守护者） | 安静专注的金发链环守护者，适合陪你检查、思考和推进任务。 | [vowlet.codex-pet.zip](packages/vowlet.codex-pet.zip) |
 | Yueyao（月曜琉璃龙） | 稀有的月光琉璃龙，适合安静陪伴你深度工作。 | [yueyao.codex-pet.zip](packages/yueyao.codex-pet.zip) |
 
 完整动画预览仍保留在 `assets/<pet-id>/` 目录下。
 
 ## 快速安装
+
+从仓库包下载并安装 Auruowl：
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/auruowl.codex-pet.zip" -o "/tmp/auruowl.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/auruowl" \
+  && unzip -o "/tmp/auruowl.codex-pet.zip" -d "$HOME/.codex/pets/auruowl"
+```
 
 从仓库包下载并安装 CorgiByte：
 
@@ -39,6 +49,14 @@ curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/corg
 curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/milkbyte.codex-pet.zip" -o "/tmp/milkbyte.codex-pet.zip" \
   && mkdir -p "$HOME/.codex/pets/milkbyte" \
   && unzip -o "/tmp/milkbyte.codex-pet.zip" -d "$HOME/.codex/pets/milkbyte"
+```
+
+从仓库包下载并安装 Solara：
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/solara.codex-pet.zip" -o "/tmp/solara.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/solara" \
+  && unzip -o "/tmp/solara.codex-pet.zip" -d "$HOME/.codex/pets/solara"
 ```
 
 从 GitHub 下载并安装 Yueyao：
@@ -108,9 +126,13 @@ flowchart LR
 codex-pets/
   assets/
     pet-gallery.png
+    auruowl/
+      contact-sheet.png
     corgibyte/
       contact-sheet.png
     milkbyte/
+      contact-sheet.png
+    solara/
       contact-sheet.png
     yueyao/
       contact-sheet.png
@@ -122,16 +144,24 @@ codex-pets/
     generate_pet_gallery.py
   requirements.txt
   packages/
+    auruowl.codex-pet.zip
     corgibyte.codex-pet.zip
     milkbyte.codex-pet.zip
+    solara.codex-pet.zip
     yueyao.codex-pet.zip
     vowlet.codex-pet.zip
     plaidpup.codex-pet.zip
   pets/
+    auruowl/
+      pet.json
+      spritesheet.webp
     corgibyte/
       pet.json
       spritesheet.webp
     milkbyte/
+      pet.json
+      spritesheet.webp
+    solara/
       pet.json
       spritesheet.webp
     yueyao/
