@@ -3,7 +3,7 @@
 > A growing collection of custom pets for Codex Desktop.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pets](https://img.shields.io/badge/pets-7-blue.svg)](#pets)
+[![Pets](https://img.shields.io/badge/pets-11-blue.svg)](#pets)
 
 [中文说明](README_CN.md)
 
@@ -11,12 +11,16 @@
 
 This gallery is generated from `pets/*/pet.json` and the first frame of each `spritesheet.webp` by `scripts/generate_pet_gallery.py`. Add a new pet folder, rerun the script, and the mosaic expands automatically.
 
-![Codex pet gallery](assets/pet-gallery.png?v=7)
+![Codex pet gallery](assets/pet-gallery.png?v=11)
 
 | Pet | Description | Package |
 | --- | --- | --- |
 | Auruowl | An aurora owl scholar with bright brow feathers for focused review sessions. | [auruowl.codex-pet.zip](packages/auruowl.codex-pet.zip) |
+| Bonsaigo | A calm bonsai stone golem companion with a sprout crown. | [bonsaigo.codex-pet.zip](packages/bonsaigo.codex-pet.zip) |
+| Chadango | A tea lantern tanuki companion with a dango tail charm. | [chadango.codex-pet.zip](packages/chadango.codex-pet.zip) |
+| Clockshiba | A clockwork shiba pup with a copper gear collar. | [clockshiba.codex-pet.zip](packages/clockshiba.codex-pet.zip) |
 | CorgiByte | A cheerful short-legged corgi coding buddy with a tiny cyan spark charm. | [corgibyte.codex-pet.zip](packages/corgibyte.codex-pet.zip) |
+| Glassbun | A glass bunny-dragon hybrid companion with tiny horn ears. | [glassbun.codex-pet.zip](packages/glassbun.codex-pet.zip) |
 | Milkbyte | A warm yellow baby dragon with a cream belly and tiny cyan code-spark accents. | [milkbyte.codex-pet.zip](packages/milkbyte.codex-pet.zip) |
 | Plaidpup | A black shiba pup in a blue plaid shirt with coherent playful poses. | [plaidpup.codex-pet.zip](packages/plaidpup.codex-pet.zip) |
 | Solara | A tiny solar phoenix chick with an ember crest. | [solara.codex-pet.zip](packages/solara.codex-pet.zip) |
@@ -35,12 +39,44 @@ curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/auru
   && unzip -o "/tmp/auruowl.codex-pet.zip" -d "$HOME/.codex/pets/auruowl"
 ```
 
+Install Bonsaigo from the repository package:
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/bonsaigo.codex-pet.zip" -o "/tmp/bonsaigo.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/bonsaigo" \
+  && unzip -o "/tmp/bonsaigo.codex-pet.zip" -d "$HOME/.codex/pets/bonsaigo"
+```
+
+Install Chadango from the repository package:
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/chadango.codex-pet.zip" -o "/tmp/chadango.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/chadango" \
+  && unzip -o "/tmp/chadango.codex-pet.zip" -d "$HOME/.codex/pets/chadango"
+```
+
+Install Clockshiba from the repository package:
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/clockshiba.codex-pet.zip" -o "/tmp/clockshiba.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/clockshiba" \
+  && unzip -o "/tmp/clockshiba.codex-pet.zip" -d "$HOME/.codex/pets/clockshiba"
+```
+
 Install CorgiByte from the repository package:
 
 ```bash
 curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/corgibyte.codex-pet.zip" -o "/tmp/corgibyte.codex-pet.zip" \
   && mkdir -p "$HOME/.codex/pets/corgibyte" \
   && unzip -o "/tmp/corgibyte.codex-pet.zip" -d "$HOME/.codex/pets/corgibyte"
+```
+
+Install Glassbun from the repository package:
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/glassbun.codex-pet.zip" -o "/tmp/glassbun.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/glassbun" \
+  && unzip -o "/tmp/glassbun.codex-pet.zip" -d "$HOME/.codex/pets/glassbun"
 ```
 
 Install Milkbyte from the repository package:
@@ -128,7 +164,15 @@ codex-pets/
     pet-gallery.png
     auruowl/
       contact-sheet.png
+    bonsaigo/
+      contact-sheet.png
+    chadango/
+      contact-sheet.png
+    clockshiba/
+      contact-sheet.png
     corgibyte/
+      contact-sheet.png
+    glassbun/
       contact-sheet.png
     milkbyte/
       contact-sheet.png
@@ -145,7 +189,11 @@ codex-pets/
   requirements.txt
   packages/
     auruowl.codex-pet.zip
+    bonsaigo.codex-pet.zip
+    chadango.codex-pet.zip
+    clockshiba.codex-pet.zip
     corgibyte.codex-pet.zip
+    glassbun.codex-pet.zip
     milkbyte.codex-pet.zip
     solara.codex-pet.zip
     yueyao.codex-pet.zip
@@ -155,7 +203,19 @@ codex-pets/
     auruowl/
       pet.json
       spritesheet.webp
+    bonsaigo/
+      pet.json
+      spritesheet.webp
+    chadango/
+      pet.json
+      spritesheet.webp
+    clockshiba/
+      pet.json
+      spritesheet.webp
     corgibyte/
+      pet.json
+      spritesheet.webp
+    glassbun/
       pet.json
       spritesheet.webp
     milkbyte/

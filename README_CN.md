@@ -3,7 +3,7 @@
 > Codex Desktop 自定义宠物合集。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pets](https://img.shields.io/badge/pets-7-blue.svg)](#宠物)
+[![Pets](https://img.shields.io/badge/pets-11-blue.svg)](#宠物)
 
 [English](README.md)
 
@@ -11,12 +11,16 @@
 
 这张宫格由 `scripts/generate_pet_gallery.py` 根据 `pets/*/pet.json` 和每个 `spritesheet.webp` 的第一帧自动生成。新增宠物文件夹后重跑脚本，宫格会自动扩展成多行。
 
-![Codex 宠物宫格](assets/pet-gallery.png?v=7)
+![Codex 宠物宫格](assets/pet-gallery.png?v=11)
 
 | 宠物 | 说明 | 安装包 |
 | --- | --- | --- |
 | Auruowl（极光学者猫头鹰） | 有明亮眉羽的极光学者猫头鹰，适合陪你专注审阅和检查。 | [auruowl.codex-pet.zip](packages/auruowl.codex-pet.zip) |
+| Bonsaigo（盆景石像） | 头顶新芽的盆景石像伙伴，沉稳安静，适合陪你慢慢推进任务。 | [bonsaigo.codex-pet.zip](packages/bonsaigo.codex-pet.zip) |
+| Chadango（茶灯狸） | 带着团子尾饰的茶灯狸小伙伴，动作活泼，适合轻松陪伴。 | [chadango.codex-pet.zip](packages/chadango.codex-pet.zip) |
+| Clockshiba（发条柴犬） | 戴着铜色齿轮项圈的发条柴犬，适合精神满满地陪你工作。 | [clockshiba.codex-pet.zip](packages/clockshiba.codex-pet.zip) |
 | CorgiByte（短腿柯基） | 开朗的短腿柯基代码伙伴，戴着小小青蓝火花挂坠。 | [corgibyte.codex-pet.zip](packages/corgibyte.codex-pet.zip) |
+| Glassbun（琉璃兔龙） | 长着小角耳的琉璃兔龙伙伴，晶莹轻快，适合安静陪伴。 | [glassbun.codex-pet.zip](packages/glassbun.codex-pet.zip) |
 | Milkbyte（奶黄小龙） | 温暖的黄色奶龙小伙伴，奶油色肚皮和青蓝小火花点缀，适合轻松陪伴工作。 | [milkbyte.codex-pet.zip](packages/milkbyte.codex-pet.zip) |
 | Plaidpup（蓝格衬衫黑柴） | 穿蓝格衬衫的黑柴小伙伴，动作更连贯、适合轻松陪伴。 | [plaidpup.codex-pet.zip](packages/plaidpup.codex-pet.zip) |
 | Solara（太阳小凤凰） | 头顶微光羽冠的太阳小凤凰，适合明亮轻快地陪伴工作。 | [solara.codex-pet.zip](packages/solara.codex-pet.zip) |
@@ -35,12 +39,44 @@ curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/auru
   && unzip -o "/tmp/auruowl.codex-pet.zip" -d "$HOME/.codex/pets/auruowl"
 ```
 
+从仓库包下载并安装 Bonsaigo：
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/bonsaigo.codex-pet.zip" -o "/tmp/bonsaigo.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/bonsaigo" \
+  && unzip -o "/tmp/bonsaigo.codex-pet.zip" -d "$HOME/.codex/pets/bonsaigo"
+```
+
+从仓库包下载并安装 Chadango：
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/chadango.codex-pet.zip" -o "/tmp/chadango.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/chadango" \
+  && unzip -o "/tmp/chadango.codex-pet.zip" -d "$HOME/.codex/pets/chadango"
+```
+
+从仓库包下载并安装 Clockshiba：
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/clockshiba.codex-pet.zip" -o "/tmp/clockshiba.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/clockshiba" \
+  && unzip -o "/tmp/clockshiba.codex-pet.zip" -d "$HOME/.codex/pets/clockshiba"
+```
+
 从仓库包下载并安装 CorgiByte：
 
 ```bash
 curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/corgibyte.codex-pet.zip" -o "/tmp/corgibyte.codex-pet.zip" \
   && mkdir -p "$HOME/.codex/pets/corgibyte" \
   && unzip -o "/tmp/corgibyte.codex-pet.zip" -d "$HOME/.codex/pets/corgibyte"
+```
+
+从仓库包下载并安装 Glassbun：
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/glassbun.codex-pet.zip" -o "/tmp/glassbun.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/glassbun" \
+  && unzip -o "/tmp/glassbun.codex-pet.zip" -d "$HOME/.codex/pets/glassbun"
 ```
 
 从仓库包下载并安装 Milkbyte：
@@ -128,7 +164,15 @@ codex-pets/
     pet-gallery.png
     auruowl/
       contact-sheet.png
+    bonsaigo/
+      contact-sheet.png
+    chadango/
+      contact-sheet.png
+    clockshiba/
+      contact-sheet.png
     corgibyte/
+      contact-sheet.png
+    glassbun/
       contact-sheet.png
     milkbyte/
       contact-sheet.png
@@ -145,7 +189,11 @@ codex-pets/
   requirements.txt
   packages/
     auruowl.codex-pet.zip
+    bonsaigo.codex-pet.zip
+    chadango.codex-pet.zip
+    clockshiba.codex-pet.zip
     corgibyte.codex-pet.zip
+    glassbun.codex-pet.zip
     milkbyte.codex-pet.zip
     solara.codex-pet.zip
     yueyao.codex-pet.zip
@@ -155,7 +203,19 @@ codex-pets/
     auruowl/
       pet.json
       spritesheet.webp
+    bonsaigo/
+      pet.json
+      spritesheet.webp
+    chadango/
+      pet.json
+      spritesheet.webp
+    clockshiba/
+      pet.json
+      spritesheet.webp
     corgibyte/
+      pet.json
+      spritesheet.webp
+    glassbun/
       pet.json
       spritesheet.webp
     milkbyte/
