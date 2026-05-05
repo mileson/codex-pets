@@ -3,7 +3,7 @@
 > A growing collection of custom pets for Codex Desktop.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pets](https://img.shields.io/badge/pets-1-blue.svg)](#pets)
+[![Pets](https://img.shields.io/badge/pets-2-blue.svg)](#pets)
 
 [中文说明](README_CN.md)
 
@@ -15,6 +15,12 @@ Yueyao is a rare moonlit glass dragon companion for quiet deep work.
 
 ![Yueyao animation contact sheet](assets/yueyao/contact-sheet.png)
 
+### Vowlet
+
+Vowlet is a quiet blond chain guardian with a focused, watchful presence.
+
+![Vowlet animation contact sheet](assets/vowlet/contact-sheet.png)
+
 ## Quick Install
 
 Install Yueyao from this repository:
@@ -23,6 +29,14 @@ Install Yueyao from this repository:
 curl -L "https://github.com/mileson/codex-pets/releases/download/v0.1.0/yueyao.codex-pet.zip" -o "/tmp/yueyao.codex-pet.zip" \
   && mkdir -p "$HOME/.codex/pets/yueyao" \
   && unzip -o "/tmp/yueyao.codex-pet.zip" -d "$HOME/.codex/pets/yueyao"
+```
+
+Install Vowlet from the repository package:
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/vowlet.codex-pet.zip" -o "/tmp/vowlet.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/vowlet" \
+  && unzip -o "/tmp/vowlet.codex-pet.zip" -d "$HOME/.codex/pets/vowlet"
 ```
 
 If you cloned the repository locally, install from the checked-out files:
@@ -69,10 +83,16 @@ codex-pets/
   assets/
     yueyao/
       contact-sheet.png
+    vowlet/
+      contact-sheet.png
   packages/
     yueyao.codex-pet.zip
+    vowlet.codex-pet.zip
   pets/
     yueyao/
+      pet.json
+      spritesheet.webp
+    vowlet/
       pet.json
       spritesheet.webp
 ```

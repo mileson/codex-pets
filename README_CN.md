@@ -3,7 +3,7 @@
 > Codex Desktop 自定义宠物合集。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pets](https://img.shields.io/badge/pets-1-blue.svg)](#宠物)
+[![Pets](https://img.shields.io/badge/pets-2-blue.svg)](#宠物)
 
 [English](README.md)
 
@@ -15,6 +15,12 @@ Yueyao 是一只稀有的月光琉璃龙，适合安静陪伴你深度工作。
 
 ![Yueyao 动画预览](assets/yueyao/contact-sheet.png)
 
+### Vowlet（金发链环守护者）
+
+Vowlet 是一位安静专注的金发链环守护者，适合陪你检查、思考和推进任务。
+
+![Vowlet 动画预览](assets/vowlet/contact-sheet.png)
+
 ## 快速安装
 
 从 GitHub 下载并安装 Yueyao：
@@ -23,6 +29,14 @@ Yueyao 是一只稀有的月光琉璃龙，适合安静陪伴你深度工作。
 curl -L "https://github.com/mileson/codex-pets/releases/download/v0.1.0/yueyao.codex-pet.zip" -o "/tmp/yueyao.codex-pet.zip" \
   && mkdir -p "$HOME/.codex/pets/yueyao" \
   && unzip -o "/tmp/yueyao.codex-pet.zip" -d "$HOME/.codex/pets/yueyao"
+```
+
+从仓库包下载并安装 Vowlet：
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/vowlet.codex-pet.zip" -o "/tmp/vowlet.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/vowlet" \
+  && unzip -o "/tmp/vowlet.codex-pet.zip" -d "$HOME/.codex/pets/vowlet"
 ```
 
 如果你已经克隆了这个仓库，也可以从本地文件安装：
@@ -69,10 +83,16 @@ codex-pets/
   assets/
     yueyao/
       contact-sheet.png
+    vowlet/
+      contact-sheet.png
   packages/
     yueyao.codex-pet.zip
+    vowlet.codex-pet.zip
   pets/
     yueyao/
+      pet.json
+      spritesheet.webp
+    vowlet/
       pet.json
       spritesheet.webp
 ```
