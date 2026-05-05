@@ -9,23 +9,17 @@
 
 ## 宠物
 
-### Yueyao（月曜琉璃龙）
+这张宫格由 `scripts/generate_pet_gallery.py` 根据 `pets/*/pet.json` 和每个 `spritesheet.webp` 的第一帧自动生成。新增宠物文件夹后重跑脚本，宫格会自动扩展成多行。
 
-Yueyao 是一只稀有的月光琉璃龙，适合安静陪伴你深度工作。
+![Codex 宠物宫格](assets/pet-gallery.png)
 
-![Yueyao 动画预览](assets/yueyao/contact-sheet.png)
+| 宠物 | 说明 | 安装包 |
+| --- | --- | --- |
+| Plaidpup（蓝格衬衫黑柴） | 穿蓝格衬衫的黑柴小伙伴，动作更连贯、适合轻松陪伴。 | [plaidpup.codex-pet.zip](packages/plaidpup.codex-pet.zip) |
+| Vowlet（金发链环守护者） | 安静专注的金发链环守护者，适合陪你检查、思考和推进任务。 | [vowlet.codex-pet.zip](packages/vowlet.codex-pet.zip) |
+| Yueyao（月曜琉璃龙） | 稀有的月光琉璃龙，适合安静陪伴你深度工作。 | [yueyao.codex-pet.zip](packages/yueyao.codex-pet.zip) |
 
-### Vowlet（金发链环守护者）
-
-Vowlet 是一位安静专注的金发链环守护者，适合陪你检查、思考和推进任务。
-
-![Vowlet 动画预览](assets/vowlet/contact-sheet.png)
-
-### Plaidpup（蓝格衬衫黑柴）
-
-Plaidpup 是一只穿蓝格衬衫的黑柴小伙伴，动作来自重新生成的完整姿态。
-
-![Plaidpup 动画预览](assets/plaidpup/contact-sheet.png)
+完整动画预览仍保留在 `assets/<pet-id>/` 目录下。
 
 ## 快速安装
 
@@ -95,12 +89,15 @@ flowchart LR
 ```text
 codex-pets/
   assets/
+    pet-gallery.png
     yueyao/
       contact-sheet.png
     vowlet/
       contact-sheet.png
     plaidpup/
       contact-sheet.png
+  scripts/
+    generate_pet_gallery.py
   packages/
     yueyao.codex-pet.zip
     vowlet.codex-pet.zip
@@ -129,8 +126,9 @@ codex-pets/
 1. 创建 `pets/<pet-id>/`。
 2. 放入 `pet.json` 和 `spritesheet.webp`。
 3. 打包成 `packages/<pet-id>.codex-pet.zip`。
-4. 在 `assets/<pet-id>/` 放一张预览图。
-5. 更新 `README.md` 和 `README_CN.md`。
+4. 如有需要，在 `assets/<pet-id>/` 放一张完整预览图。
+5. 运行 `python3 scripts/generate_pet_gallery.py` 刷新宫格图。
+6. 如果简短说明有变化，更新 `README.md` 和 `README_CN.md`。
 
 示例：
 

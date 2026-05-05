@@ -9,23 +9,17 @@
 
 ## Pets
 
-### Yueyao
+This gallery is generated from `pets/*/pet.json` and the first frame of each `spritesheet.webp` by `scripts/generate_pet_gallery.py`. Add a new pet folder, rerun the script, and the mosaic expands automatically.
 
-Yueyao is a rare moonlit glass dragon companion for quiet deep work.
+![Codex pet gallery](assets/pet-gallery.png)
 
-![Yueyao animation contact sheet](assets/yueyao/contact-sheet.png)
+| Pet | Description | Package |
+| --- | --- | --- |
+| Plaidpup | A black shiba pup in a blue plaid shirt with coherent playful poses. | [plaidpup.codex-pet.zip](packages/plaidpup.codex-pet.zip) |
+| Vowlet | A quiet blond chain guardian with a focused, watchful presence. | [vowlet.codex-pet.zip](packages/vowlet.codex-pet.zip) |
+| Yueyao | A rare moonlit glass dragon companion for quiet deep work. | [yueyao.codex-pet.zip](packages/yueyao.codex-pet.zip) |
 
-### Vowlet
-
-Vowlet is a quiet blond chain guardian with a focused, watchful presence.
-
-![Vowlet animation contact sheet](assets/vowlet/contact-sheet.png)
-
-### Plaidpup
-
-Plaidpup is a black shiba pup in a blue plaid shirt with regenerated coherent poses.
-
-![Plaidpup animation contact sheet](assets/plaidpup/contact-sheet.png)
+Detailed animation contact sheets live under `assets/<pet-id>/`.
 
 ## Quick Install
 
@@ -95,12 +89,15 @@ flowchart LR
 ```text
 codex-pets/
   assets/
+    pet-gallery.png
     yueyao/
       contact-sheet.png
     vowlet/
       contact-sheet.png
     plaidpup/
       contact-sheet.png
+  scripts/
+    generate_pet_gallery.py
   packages/
     yueyao.codex-pet.zip
     vowlet.codex-pet.zip
@@ -129,8 +126,9 @@ The installable zip should contain those two files at the top level, not inside 
 1. Create `pets/<pet-id>/`.
 2. Add `pet.json` and `spritesheet.webp`.
 3. Zip the two files into `packages/<pet-id>.codex-pet.zip`.
-4. Add a preview image under `assets/<pet-id>/`.
-5. Update this README and `README_CN.md`.
+4. Add a detailed preview image under `assets/<pet-id>/` if needed.
+5. Refresh the gallery with `python3 scripts/generate_pet_gallery.py`.
+6. Update this README and `README_CN.md` if the compact description changed.
 
 Example:
 
