@@ -9,7 +9,11 @@ Thanks for helping grow this Codex pet collection.
 - Include `spritesheet.webp`.
 - Add an installable zip under `packages/<pet-id>.codex-pet.zip`.
 - Add a preview image under `assets/<pet-id>/`.
+- Install tooling if needed with `python3 -m pip install -r requirements.txt`.
+- Run `python3 scripts/generate_pet_gallery.py` to refresh `assets/pet-gallery.png`.
 - Update both `README.md` and `README_CN.md`.
+
+For the full maintainer flow, including the gallery and package checks, see [docs/MAINTAINING.md](docs/MAINTAINING.md).
 
 ## Zip Format
 

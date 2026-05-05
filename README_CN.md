@@ -98,6 +98,7 @@ codex-pets/
       contact-sheet.png
   scripts/
     generate_pet_gallery.py
+  requirements.txt
   packages/
     yueyao.codex-pet.zip
     vowlet.codex-pet.zip
@@ -127,8 +128,11 @@ codex-pets/
 2. 放入 `pet.json` 和 `spritesheet.webp`。
 3. 打包成 `packages/<pet-id>.codex-pet.zip`。
 4. 如有需要，在 `assets/<pet-id>/` 放一张完整预览图。
-5. 运行 `python3 scripts/generate_pet_gallery.py` 刷新宫格图。
-6. 如果简短说明有变化，更新 `README.md` 和 `README_CN.md`。
+5. 如有需要，先运行 `python3 -m pip install -r requirements.txt` 安装工具依赖。
+6. 运行 `python3 scripts/generate_pet_gallery.py` 刷新宫格图。
+7. 如果简短说明有变化，更新 `README.md` 和 `README_CN.md`。
+
+完整的维护流程和 Agent 操作规范见 [docs/MAINTAINING.md](docs/MAINTAINING.md)。
 
 示例：
 
@@ -143,7 +147,7 @@ zip -r ../../packages/yueyao.codex-pet.zip pet.json spritesheet.webp
 
 ## 贡献
 
-欢迎提交新的宠物包、预览图和文档改进。提交前请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。
+欢迎提交新的宠物包、预览图和文档改进。提交前请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [docs/MAINTAINING.md](docs/MAINTAINING.md)。
 
 ## 安全
 

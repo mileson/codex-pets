@@ -98,6 +98,7 @@ codex-pets/
       contact-sheet.png
   scripts/
     generate_pet_gallery.py
+  requirements.txt
   packages/
     yueyao.codex-pet.zip
     vowlet.codex-pet.zip
@@ -127,8 +128,11 @@ The installable zip should contain those two files at the top level, not inside 
 2. Add `pet.json` and `spritesheet.webp`.
 3. Zip the two files into `packages/<pet-id>.codex-pet.zip`.
 4. Add a detailed preview image under `assets/<pet-id>/` if needed.
-5. Refresh the gallery with `python3 scripts/generate_pet_gallery.py`.
-6. Update this README and `README_CN.md` if the compact description changed.
+5. Install tooling if needed with `python3 -m pip install -r requirements.txt`.
+6. Refresh the gallery with `python3 scripts/generate_pet_gallery.py`.
+7. Update this README and `README_CN.md` if the compact description changed.
+
+For the full maintainer and agent workflow, see [docs/MAINTAINING.md](docs/MAINTAINING.md).
 
 Example:
 
@@ -143,7 +147,7 @@ Annotated screenshots live in [docs](docs/).
 
 ## Contributing
 
-Pet packs, previews, and documentation improvements are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+Pet packs, previews, and documentation improvements are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/MAINTAINING.md](docs/MAINTAINING.md) before opening a pull request.
 
 ## Security
 

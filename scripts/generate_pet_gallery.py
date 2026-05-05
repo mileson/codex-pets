@@ -8,7 +8,10 @@ import json
 import math
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+try:
+    from PIL import Image, ImageDraw, ImageFont
+except ModuleNotFoundError as exc:
+    raise SystemExit("Missing Pillow. Run `python3 -m pip install -r requirements.txt` before generating the gallery.") from exc
 
 CELL_W = 192
 CELL_H = 208
