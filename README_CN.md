@@ -11,7 +11,7 @@
 
 这张宫格由 `scripts/generate_pet_gallery.py` 根据 `pets/*/pet.json` 和每个 `spritesheet.webp` 的第一帧自动生成。新增宠物文件夹后重跑脚本，宫格会自动扩展成多行。
 
-![Codex 宠物宫格](assets/pet-gallery.png)
+![Codex 宠物宫格](assets/pet-gallery.png?v=7)
 
 | 宠物 | 说明 | 安装包 |
 | --- | --- | --- |

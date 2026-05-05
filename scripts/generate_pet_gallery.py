@@ -107,7 +107,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo-root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--output", type=Path, default=Path("assets/pet-gallery.png"))
-    parser.add_argument("--max-columns", type=int, default=5)
+    parser.add_argument("--max-columns", type=int, default=7)
     args = parser.parse_args()
 
     repo_root = args.repo_root.resolve()

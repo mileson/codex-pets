@@ -11,7 +11,7 @@
 
 This gallery is generated from `pets/*/pet.json` and the first frame of each `spritesheet.webp` by `scripts/generate_pet_gallery.py`. Add a new pet folder, rerun the script, and the mosaic expands automatically.
 
-![Codex pet gallery](assets/pet-gallery.png)
+![Codex pet gallery](assets/pet-gallery.png?v=7)
 
 | Pet | Description | Package |
 | --- | --- | --- |
