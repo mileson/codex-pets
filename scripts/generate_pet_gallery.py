@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate a README gallery image from the repository pet spritesheets."""
+"""Generate README gallery images from the repository pet spritesheets."""
 
 from __future__ import annotations
 
@@ -15,14 +15,24 @@ except ModuleNotFoundError as exc:
 
 CELL_W = 192
 CELL_H = 208
+DEFAULT_OUTPUTS = {
+    "en": Path("assets/pet-gallery.png"),
+    "zh": Path("assets/pet-gallery-cn.png"),
+}
 
 
-def load_font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
-    candidates = [
+def load_font(size: int, locale: str) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
+    zh_candidates = [
+        "/System/Library/Fonts/PingFang.ttc",
+        "/System/Library/Fonts/STHeiti Medium.ttc",
+        "/System/Library/Fonts/Supplemental/Songti.ttc",
+    ]
+    en_candidates = [
         "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
         "/System/Library/Fonts/Supplemental/Arial.ttf",
         "/Library/Fonts/Arial.ttf",
     ]
+    candidates = zh_candidates + en_candidates if locale == "zh" else en_candidates + zh_candidates
     for candidate in candidates:
         path = Path(candidate)
         if path.exists():
@@ -44,23 +54,41 @@ def trim_alpha(image: Image.Image) -> Image.Image:
     return rgba.crop(bbox) if bbox else rgba
 
 
-def load_pet(pet_dir: Path) -> dict[str, object] | None:
+def load_localized_names(repo_root: Path, locale: str) -> dict[str, str]:
+    if locale == "en":
+        return {}
+    path = repo_root / "docs" / f"pet-gallery.{locale}.json"
+    if not path.is_file():
+        raise SystemExit(f"Missing localized gallery names: {path}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise SystemExit(f"Localized gallery names must be an object: {path}")
+    return {str(key): str(value) for key, value in data.items()}
+
+
+def load_pet(pet_dir: Path, localized_names: dict[str, str], locale: str) -> dict[str, object] | None:
     meta_path = pet_dir / "pet.json"
     sheet_path = pet_dir / "spritesheet.webp"
     if not meta_path.is_file() or not sheet_path.is_file():
         return None
     metadata = json.loads(meta_path.read_text(encoding="utf-8"))
+    pet_id = str(metadata.get("id", pet_dir.name))
+    display_name = str(metadata.get("displayName", pet_dir.name))
+    localized_name = localized_names.get(pet_id)
+    if locale != "en" and not localized_name:
+        raise SystemExit(f"Missing {locale} gallery name for pet: {pet_id}")
     with Image.open(sheet_path) as sheet:
         sprite = trim_alpha(sheet.convert("RGBA").crop((0, 0, CELL_W, CELL_H)))
     return {
-        "id": metadata.get("id", pet_dir.name),
-        "displayName": metadata.get("displayName", pet_dir.name),
+        "id": pet_id,
+        "displayName": localized_name or display_name,
+        "sortName": display_name,
         "description": metadata.get("description", ""),
         "sprite": sprite,
     }
 
 
-def build_gallery(pets: list[dict[str, object]], output: Path, max_columns: int) -> None:
+def build_gallery(pets: list[dict[str, object]], output: Path, max_columns: int, locale: str) -> None:
     if not pets:
         raise SystemExit("No pets found")
 
@@ -76,7 +104,7 @@ def build_gallery(pets: list[dict[str, object]], output: Path, max_columns: int)
 
     image = Image.new("RGBA", (width, height), (248, 250, 252, 255))
     draw = ImageDraw.Draw(image)
-    name_font = load_font(24)
+    name_font = load_font(24, locale)
 
     for index, pet in enumerate(pets):
         row = index // columns
@@ -106,16 +134,25 @@ def build_gallery(pets: list[dict[str, object]], output: Path, max_columns: int)
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo-root", type=Path, default=Path(__file__).resolve().parents[1])
-    parser.add_argument("--output", type=Path, default=Path("assets/pet-gallery.png"))
+    parser.add_argument("--output", type=Path)
+    parser.add_argument("--locale", choices=sorted(DEFAULT_OUTPUTS), default="en")
     parser.add_argument("--max-columns", type=int, default=7)
     args = parser.parse_args()
 
     repo_root = args.repo_root.resolve()
     pets_root = repo_root / "pets"
-    pets = [pet for pet_dir in sorted(pets_root.iterdir()) if pet_dir.is_dir() for pet in [load_pet(pet_dir)] if pet]
-    pets.sort(key=lambda pet: str(pet["displayName"]).casefold())
-    build_gallery(pets, repo_root / args.output, max(1, args.max_columns))
-    print(f"Generated {args.output} with {len(pets)} pets")
+    localized_names = load_localized_names(repo_root, args.locale)
+    pets = [
+        pet
+        for pet_dir in sorted(pets_root.iterdir())
+        if pet_dir.is_dir()
+        for pet in [load_pet(pet_dir, localized_names, args.locale)]
+        if pet
+    ]
+    pets.sort(key=lambda pet: str(pet["sortName"]).casefold())
+    output = args.output or DEFAULT_OUTPUTS[args.locale]
+    build_gallery(pets, repo_root / output, max(1, args.max_columns), args.locale)
+    print(f"Generated {output} with {len(pets)} pets")
 
 
 if __name__ == "__main__":
