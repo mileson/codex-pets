@@ -3,7 +3,7 @@
 > A growing collection of custom pets for Codex Desktop.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pets](https://img.shields.io/badge/pets-2-blue.svg)](#pets)
+[![Pets](https://img.shields.io/badge/pets-3-blue.svg)](#pets)
 
 [中文说明](README_CN.md)
 
@@ -21,6 +21,12 @@ Vowlet is a quiet blond chain guardian with a focused, watchful presence.
 
 ![Vowlet animation contact sheet](assets/vowlet/contact-sheet.png)
 
+### Plaidpup
+
+Plaidpup is a black shiba pup in a blue plaid shirt with regenerated coherent poses.
+
+![Plaidpup animation contact sheet](assets/plaidpup/contact-sheet.png)
+
 ## Quick Install
 
 Install Yueyao from this repository:
@@ -37,6 +43,14 @@ Install Vowlet from the repository package:
 curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/vowlet.codex-pet.zip" -o "/tmp/vowlet.codex-pet.zip" \
   && mkdir -p "$HOME/.codex/pets/vowlet" \
   && unzip -o "/tmp/vowlet.codex-pet.zip" -d "$HOME/.codex/pets/vowlet"
+```
+
+Install Plaidpup from the repository package:
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/plaidpup.codex-pet.zip" -o "/tmp/plaidpup.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/plaidpup" \
+  && unzip -o "/tmp/plaidpup.codex-pet.zip" -d "$HOME/.codex/pets/plaidpup"
 ```
 
 If you cloned the repository locally, install from the checked-out files:
@@ -85,14 +99,20 @@ codex-pets/
       contact-sheet.png
     vowlet/
       contact-sheet.png
+    plaidpup/
+      contact-sheet.png
   packages/
     yueyao.codex-pet.zip
     vowlet.codex-pet.zip
+    plaidpup.codex-pet.zip
   pets/
     yueyao/
       pet.json
       spritesheet.webp
     vowlet/
+      pet.json
+      spritesheet.webp
+    plaidpup/
       pet.json
       spritesheet.webp
 ```
