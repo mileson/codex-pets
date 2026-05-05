@@ -3,7 +3,7 @@
 > Codex Desktop 自定义宠物合集。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pets](https://img.shields.io/badge/pets-3-blue.svg)](#宠物)
+[![Pets](https://img.shields.io/badge/pets-4-blue.svg)](#宠物)
 
 [English](README.md)
 
@@ -15,6 +15,7 @@
 
 | 宠物 | 说明 | 安装包 |
 | --- | --- | --- |
+| Milkbyte（奶黄小龙） | 温暖的黄色奶龙小伙伴，奶油色肚皮和青蓝小火花点缀，适合轻松陪伴工作。 | [milkbyte.codex-pet.zip](packages/milkbyte.codex-pet.zip) |
 | Plaidpup（蓝格衬衫黑柴） | 穿蓝格衬衫的黑柴小伙伴，动作更连贯、适合轻松陪伴。 | [plaidpup.codex-pet.zip](packages/plaidpup.codex-pet.zip) |
 | Vowlet（金发链环守护者） | 安静专注的金发链环守护者，适合陪你检查、思考和推进任务。 | [vowlet.codex-pet.zip](packages/vowlet.codex-pet.zip) |
 | Yueyao（月曜琉璃龙） | 稀有的月光琉璃龙，适合安静陪伴你深度工作。 | [yueyao.codex-pet.zip](packages/yueyao.codex-pet.zip) |
@@ -22,6 +23,14 @@
 完整动画预览仍保留在 `assets/<pet-id>/` 目录下。
 
 ## 快速安装
+
+从仓库包下载并安装 Milkbyte：
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/milkbyte.codex-pet.zip" -o "/tmp/milkbyte.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/milkbyte" \
+  && unzip -o "/tmp/milkbyte.codex-pet.zip" -d "$HOME/.codex/pets/milkbyte"
+```
 
 从 GitHub 下载并安装 Yueyao：
 
@@ -90,6 +99,8 @@ flowchart LR
 codex-pets/
   assets/
     pet-gallery.png
+    milkbyte/
+      contact-sheet.png
     yueyao/
       contact-sheet.png
     vowlet/
@@ -100,10 +111,14 @@ codex-pets/
     generate_pet_gallery.py
   requirements.txt
   packages/
+    milkbyte.codex-pet.zip
     yueyao.codex-pet.zip
     vowlet.codex-pet.zip
     plaidpup.codex-pet.zip
   pets/
+    milkbyte/
+      pet.json
+      spritesheet.webp
     yueyao/
       pet.json
       spritesheet.webp

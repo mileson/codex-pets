@@ -3,7 +3,7 @@
 > A growing collection of custom pets for Codex Desktop.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pets](https://img.shields.io/badge/pets-3-blue.svg)](#pets)
+[![Pets](https://img.shields.io/badge/pets-4-blue.svg)](#pets)
 
 [中文说明](README_CN.md)
 
@@ -15,6 +15,7 @@ This gallery is generated from `pets/*/pet.json` and the first frame of each `sp
 
 | Pet | Description | Package |
 | --- | --- | --- |
+| Milkbyte | A warm yellow baby dragon with a cream belly and tiny cyan code-spark accents. | [milkbyte.codex-pet.zip](packages/milkbyte.codex-pet.zip) |
 | Plaidpup | A black shiba pup in a blue plaid shirt with coherent playful poses. | [plaidpup.codex-pet.zip](packages/plaidpup.codex-pet.zip) |
 | Vowlet | A quiet blond chain guardian with a focused, watchful presence. | [vowlet.codex-pet.zip](packages/vowlet.codex-pet.zip) |
 | Yueyao | A rare moonlit glass dragon companion for quiet deep work. | [yueyao.codex-pet.zip](packages/yueyao.codex-pet.zip) |
@@ -22,6 +23,14 @@ This gallery is generated from `pets/*/pet.json` and the first frame of each `sp
 Detailed animation contact sheets live under `assets/<pet-id>/`.
 
 ## Quick Install
+
+Install Milkbyte from the repository package:
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/milkbyte.codex-pet.zip" -o "/tmp/milkbyte.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/milkbyte" \
+  && unzip -o "/tmp/milkbyte.codex-pet.zip" -d "$HOME/.codex/pets/milkbyte"
+```
 
 Install Yueyao from this repository:
 
@@ -90,6 +99,8 @@ flowchart LR
 codex-pets/
   assets/
     pet-gallery.png
+    milkbyte/
+      contact-sheet.png
     yueyao/
       contact-sheet.png
     vowlet/
@@ -100,10 +111,14 @@ codex-pets/
     generate_pet_gallery.py
   requirements.txt
   packages/
+    milkbyte.codex-pet.zip
     yueyao.codex-pet.zip
     vowlet.codex-pet.zip
     plaidpup.codex-pet.zip
   pets/
+    milkbyte/
+      pet.json
+      spritesheet.webp
     yueyao/
       pet.json
       spritesheet.webp
