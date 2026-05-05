@@ -3,7 +3,7 @@
 > Codex Desktop 自定义宠物合集。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pets](https://img.shields.io/badge/pets-11-blue.svg)](#宠物)
+[![Pets](https://img.shields.io/badge/pets-12-blue.svg)](#宠物)
 
 [English](README.md)
 
@@ -11,12 +11,13 @@
 
 这张宫格由 `scripts/generate_pet_gallery.py` 根据 `pets/*/pet.json` 和每个 `spritesheet.webp` 的第一帧自动生成。新增宠物文件夹后重跑脚本，宫格会自动扩展成多行。
 
-![Codex 宠物宫格](assets/pet-gallery.png?v=11)
+![Codex 宠物宫格](assets/pet-gallery.png?v=12)
 
 | 宠物 | 说明 | 安装包 |
 | --- | --- | --- |
 | Auruowl（极光学者猫头鹰） | 有明亮眉羽的极光学者猫头鹰，适合陪你专注审阅和检查。 | [auruowl.codex-pet.zip](packages/auruowl.codex-pet.zip) |
 | Bonsaigo（盆景石像） | 头顶新芽的盆景石像伙伴，沉稳安静，适合陪你慢慢推进任务。 | [bonsaigo.codex-pet.zip](packages/bonsaigo.codex-pet.zip) |
+| Canglan（苍岚麒麟） | 有玉角和云鬃的苍蓝小麒麟，温和灵动，适合安静陪伴。 | [canglan.codex-pet.zip](packages/canglan.codex-pet.zip) |
 | Chadango（茶灯狸） | 带着团子尾饰的茶灯狸小伙伴，动作活泼，适合轻松陪伴。 | [chadango.codex-pet.zip](packages/chadango.codex-pet.zip) |
 | Clockshiba（发条柴犬） | 戴着铜色齿轮项圈的发条柴犬，适合精神满满地陪你工作。 | [clockshiba.codex-pet.zip](packages/clockshiba.codex-pet.zip) |
 | CorgiByte（短腿柯基） | 开朗的短腿柯基代码伙伴，戴着小小青蓝火花挂坠。 | [corgibyte.codex-pet.zip](packages/corgibyte.codex-pet.zip) |
@@ -45,6 +46,14 @@ curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/auru
 curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/bonsaigo.codex-pet.zip" -o "/tmp/bonsaigo.codex-pet.zip" \
   && mkdir -p "$HOME/.codex/pets/bonsaigo" \
   && unzip -o "/tmp/bonsaigo.codex-pet.zip" -d "$HOME/.codex/pets/bonsaigo"
+```
+
+从仓库包下载并安装 Canglan：
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/canglan.codex-pet.zip" -o "/tmp/canglan.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/canglan" \
+  && unzip -o "/tmp/canglan.codex-pet.zip" -d "$HOME/.codex/pets/canglan"
 ```
 
 从仓库包下载并安装 Chadango：
@@ -166,6 +175,8 @@ codex-pets/
       contact-sheet.png
     bonsaigo/
       contact-sheet.png
+    canglan/
+      contact-sheet.png
     chadango/
       contact-sheet.png
     clockshiba/
@@ -190,6 +201,7 @@ codex-pets/
   packages/
     auruowl.codex-pet.zip
     bonsaigo.codex-pet.zip
+    canglan.codex-pet.zip
     chadango.codex-pet.zip
     clockshiba.codex-pet.zip
     corgibyte.codex-pet.zip
@@ -204,6 +216,9 @@ codex-pets/
       pet.json
       spritesheet.webp
     bonsaigo/
+      pet.json
+      spritesheet.webp
+    canglan/
       pet.json
       spritesheet.webp
     chadango/

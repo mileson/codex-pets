@@ -3,7 +3,7 @@
 > A growing collection of custom pets for Codex Desktop.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pets](https://img.shields.io/badge/pets-11-blue.svg)](#pets)
+[![Pets](https://img.shields.io/badge/pets-12-blue.svg)](#pets)
 
 [中文说明](README_CN.md)
 
@@ -11,12 +11,13 @@
 
 This gallery is generated from `pets/*/pet.json` and the first frame of each `spritesheet.webp` by `scripts/generate_pet_gallery.py`. Add a new pet folder, rerun the script, and the mosaic expands automatically.
 
-![Codex pet gallery](assets/pet-gallery.png?v=11)
+![Codex pet gallery](assets/pet-gallery.png?v=12)
 
 | Pet | Description | Package |
 | --- | --- | --- |
 | Auruowl | An aurora owl scholar with bright brow feathers for focused review sessions. | [auruowl.codex-pet.zip](packages/auruowl.codex-pet.zip) |
 | Bonsaigo | A calm bonsai stone golem companion with a sprout crown. | [bonsaigo.codex-pet.zip](packages/bonsaigo.codex-pet.zip) |
+| Canglan | A gentle azure cloud qilin calf with a jade horn and soft cloud mane. | [canglan.codex-pet.zip](packages/canglan.codex-pet.zip) |
 | Chadango | A tea lantern tanuki companion with a dango tail charm. | [chadango.codex-pet.zip](packages/chadango.codex-pet.zip) |
 | Clockshiba | A clockwork shiba pup with a copper gear collar. | [clockshiba.codex-pet.zip](packages/clockshiba.codex-pet.zip) |
 | CorgiByte | A cheerful short-legged corgi coding buddy with a tiny cyan spark charm. | [corgibyte.codex-pet.zip](packages/corgibyte.codex-pet.zip) |
@@ -45,6 +46,14 @@ Install Bonsaigo from the repository package:
 curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/bonsaigo.codex-pet.zip" -o "/tmp/bonsaigo.codex-pet.zip" \
   && mkdir -p "$HOME/.codex/pets/bonsaigo" \
   && unzip -o "/tmp/bonsaigo.codex-pet.zip" -d "$HOME/.codex/pets/bonsaigo"
+```
+
+Install Canglan from the repository package:
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/canglan.codex-pet.zip" -o "/tmp/canglan.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/canglan" \
+  && unzip -o "/tmp/canglan.codex-pet.zip" -d "$HOME/.codex/pets/canglan"
 ```
 
 Install Chadango from the repository package:
@@ -166,6 +175,8 @@ codex-pets/
       contact-sheet.png
     bonsaigo/
       contact-sheet.png
+    canglan/
+      contact-sheet.png
     chadango/
       contact-sheet.png
     clockshiba/
@@ -190,6 +201,7 @@ codex-pets/
   packages/
     auruowl.codex-pet.zip
     bonsaigo.codex-pet.zip
+    canglan.codex-pet.zip
     chadango.codex-pet.zip
     clockshiba.codex-pet.zip
     corgibyte.codex-pet.zip
@@ -204,6 +216,9 @@ codex-pets/
       pet.json
       spritesheet.webp
     bonsaigo/
+      pet.json
+      spritesheet.webp
+    canglan/
       pet.json
       spritesheet.webp
     chadango/
