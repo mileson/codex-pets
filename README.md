@@ -3,7 +3,7 @@
 > A growing collection of custom pets for Codex Desktop.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pets](https://img.shields.io/badge/pets-4-blue.svg)](#pets)
+[![Pets](https://img.shields.io/badge/pets-5-blue.svg)](#pets)
 
 [中文说明](README_CN.md)
 
@@ -15,6 +15,7 @@ This gallery is generated from `pets/*/pet.json` and the first frame of each `sp
 
 | Pet | Description | Package |
 | --- | --- | --- |
+| CorgiByte | A cheerful short-legged corgi coding buddy with a tiny cyan spark charm. | [corgibyte.codex-pet.zip](packages/corgibyte.codex-pet.zip) |
 | Milkbyte | A warm yellow baby dragon with a cream belly and tiny cyan code-spark accents. | [milkbyte.codex-pet.zip](packages/milkbyte.codex-pet.zip) |
 | Plaidpup | A black shiba pup in a blue plaid shirt with coherent playful poses. | [plaidpup.codex-pet.zip](packages/plaidpup.codex-pet.zip) |
 | Vowlet | A quiet blond chain guardian with a focused, watchful presence. | [vowlet.codex-pet.zip](packages/vowlet.codex-pet.zip) |
@@ -23,6 +24,14 @@ This gallery is generated from `pets/*/pet.json` and the first frame of each `sp
 Detailed animation contact sheets live under `assets/<pet-id>/`.
 
 ## Quick Install
+
+Install CorgiByte from the repository package:
+
+```bash
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/corgibyte.codex-pet.zip" -o "/tmp/corgibyte.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/corgibyte" \
+  && unzip -o "/tmp/corgibyte.codex-pet.zip" -d "$HOME/.codex/pets/corgibyte"
+```
 
 Install Milkbyte from the repository package:
 
@@ -99,6 +108,8 @@ flowchart LR
 codex-pets/
   assets/
     pet-gallery.png
+    corgibyte/
+      contact-sheet.png
     milkbyte/
       contact-sheet.png
     yueyao/
@@ -111,11 +122,15 @@ codex-pets/
     generate_pet_gallery.py
   requirements.txt
   packages/
+    corgibyte.codex-pet.zip
     milkbyte.codex-pet.zip
     yueyao.codex-pet.zip
     vowlet.codex-pet.zip
     plaidpup.codex-pet.zip
   pets/
+    corgibyte/
+      pet.json
+      spritesheet.webp
     milkbyte/
       pet.json
       spritesheet.webp
