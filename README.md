@@ -3,13 +3,13 @@
 > A growing collection of custom pets for Codex Desktop.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pets](https://img.shields.io/badge/pets-12-blue.svg)](#pets)
+[![Pets](https://img.shields.io/badge/pets-14-blue.svg)](#pets)
 
 [中文说明](README_CN.md)
 
 ## Pets
 
-![Codex pet gallery](assets/pet-gallery.png?v=12-curarpikt)
+![Codex pet gallery](assets/pet-gallery.png?v=14-yukitsune)
 
 | Pet | Description | Package |
 | --- | --- | --- |
@@ -20,10 +20,12 @@
 | Clockshiba | A clockwork shiba pup with a copper gear collar. | [clockshiba.codex-pet.zip](packages/clockshiba.codex-pet.zip) |
 | CorgiByte | A cheerful short-legged corgi coding buddy with a tiny cyan spark charm. | [corgibyte.codex-pet.zip](packages/corgibyte.codex-pet.zip) |
 | Glassbun | A glass bunny-dragon hybrid companion with tiny horn ears. | [glassbun.codex-pet.zip](packages/glassbun.codex-pet.zip) |
+| Luminara | A moon lantern moth mage companion with soft wings. | [luminara.codex-pet.zip](packages/luminara.codex-pet.zip) |
 | Milkbyte | A warm yellow baby dragon with a cream belly and tiny cyan code-spark accents. | [milkbyte.codex-pet.zip](packages/milkbyte.codex-pet.zip) |
 | Plaidpup | A black shiba pup in a blue plaid shirt with coherent playful poses. | [plaidpup.codex-pet.zip](packages/plaidpup.codex-pet.zip) |
 | Solara | A tiny solar phoenix chick with an ember crest. | [solara.codex-pet.zip](packages/solara.codex-pet.zip) |
 | Curarpikt | A focused blond chain guardian with a calm, watchful presence. | [vowlet.codex-pet.zip](packages/vowlet.codex-pet.zip) |
+| Yukitsune | A snowcap kitsune cub with frosted ear tips. | [yukitsune.codex-pet.zip](packages/yukitsune.codex-pet.zip) |
 | Yueyao | A rare moonlit glass dragon companion for quiet deep work. | [yueyao.codex-pet.zip](packages/yueyao.codex-pet.zip) |
 
 Full animation previews are available in each pet's `assets/<pet-id>/` folder.

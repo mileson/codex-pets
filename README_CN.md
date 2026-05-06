@@ -3,13 +3,13 @@
 > Codex Desktop 自定义宠物合集。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pets](https://img.shields.io/badge/pets-12-blue.svg)](#宠物)
+[![Pets](https://img.shields.io/badge/pets-14-blue.svg)](#宠物)
 
 [English](README.md)
 
 ## 宠物
 
-![Codex 宠物宫格](assets/pet-gallery-cn.png?v=12-curarpikt)
+![Codex 宠物宫格](assets/pet-gallery-cn.png?v=14-yukitsune)
 
 | 宠物 | 说明 | 安装包 |
 | --- | --- | --- |
@@ -20,10 +20,12 @@
 | Clockshiba（发条柴犬） | 戴着铜色齿轮项圈的发条柴犬，适合精神满满地陪你工作。 | [clockshiba.codex-pet.zip](packages/clockshiba.codex-pet.zip) |
 | CorgiByte（短腿柯基） | 开朗的短腿柯基代码伙伴，戴着小小青蓝火花挂坠。 | [corgibyte.codex-pet.zip](packages/corgibyte.codex-pet.zip) |
 | Glassbun（琉璃兔龙） | 长着小角耳的琉璃兔龙伙伴，晶莹轻快，适合安静陪伴。 | [glassbun.codex-pet.zip](packages/glassbun.codex-pet.zip) |
+| Luminara（月灯蛾法师） | 有柔软翅膀的月灯蛾法师伙伴，适合安静陪你专注工作。 | [luminara.codex-pet.zip](packages/luminara.codex-pet.zip) |
 | Milkbyte（奶黄小龙） | 温暖的黄色奶龙小伙伴，奶油色肚皮和青蓝小火花点缀，适合轻松陪伴工作。 | [milkbyte.codex-pet.zip](packages/milkbyte.codex-pet.zip) |
 | Plaidpup（蓝格衬衫黑柴） | 穿蓝格衬衫的黑柴小伙伴，动作更连贯、适合轻松陪伴。 | [plaidpup.codex-pet.zip](packages/plaidpup.codex-pet.zip) |
 | Solara（太阳小凤凰） | 头顶微光羽冠的太阳小凤凰，适合明亮轻快地陪伴工作。 | [solara.codex-pet.zip](packages/solara.codex-pet.zip) |
 | Curarpikt（酷拉皮卡） | 安静专注的酷拉皮卡，适合陪你检查、思考和推进任务。 | [vowlet.codex-pet.zip](packages/vowlet.codex-pet.zip) |
+| Yukitsune（雪冠狐） | 耳尖带霜的小雪狐伙伴，适合轻盈安静地陪伴工作。 | [yukitsune.codex-pet.zip](packages/yukitsune.codex-pet.zip) |
 | Yueyao（月曜琉璃龙） | 稀有的月光琉璃龙，适合安静陪伴你深度工作。 | [yueyao.codex-pet.zip](packages/yueyao.codex-pet.zip) |
 
 每个宠物的完整动画预览可在对应的 `assets/<pet-id>/` 目录查看。
