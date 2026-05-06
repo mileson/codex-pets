@@ -1,0 +1,6 @@
+{
+  "id": "runemole",
+  "displayName": "Runemole",
+  "description": "A rune mole miner companion with a gem nose.",
+  "spritesheetPath": "spritesheet.webp"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "mechabeet",
+  "displayName": "Mechabeet",
+  "description": "A tiny mecha beetle companion with a visor shell.",
+  "spritesheetPath": "spritesheet.webp"
+}
