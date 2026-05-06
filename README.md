@@ -9,7 +9,7 @@
 
 ## Pets
 
-![Codex pet gallery](assets/pet-gallery.png?v=14-yukitsune)
+![Codex pet gallery](assets/pet-gallery.png?v=14-refreshed)
 
 | Pet | Description | Package |
 | --- | --- | --- |

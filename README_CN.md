@@ -9,7 +9,7 @@
 
 ## 宠物
 
-![Codex 宠物宫格](assets/pet-gallery-cn.png?v=14-yukitsune)
+![Codex 宠物宫格](assets/pet-gallery-cn.png?v=14-refreshed)
 
 | 宠物 | 说明 | 安装包 |
 | --- | --- | --- |
