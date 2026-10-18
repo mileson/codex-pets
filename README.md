@@ -7,6 +7,37 @@
 
 [中文说明](README_CN.md)
 
+[Screenshots](#readme-section-1) · [Quick Install](#readme-section-2) · [Pets](#readme-section-3) · [Security](#readme-section-6) · [Contributing](#readme-section-7) · [License](#readme-section-8) · [Author](#readme-section-9)
+
+<a id="readme-section-1"></a>
+
+## Screenshots
+
+Annotated screenshots live in [docs](docs/).
+
+<a id="readme-section-2"></a>
+
+## Quick Install
+
+Pick a pet id from the table above, then run:
+
+```bash
+PET_ID="yueyao"
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/${PET_ID}.codex-pet.zip" -o "/tmp/${PET_ID}.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/${PET_ID}" \
+  && unzip -o "/tmp/${PET_ID}.codex-pet.zip" -d "$HOME/.codex/pets/${PET_ID}"
+```
+
+If you cloned the repository locally, install from the checked-out files:
+
+```bash
+PET_ID="yueyao"
+mkdir -p "$HOME/.codex/pets/${PET_ID}" \
+  && cp "pets/${PET_ID}/pet.json" "pets/${PET_ID}/spritesheet.webp" "$HOME/.codex/pets/${PET_ID}/"
+```
+
+<a id="readme-section-3"></a>
+
 ## Pets
 
 ![Codex pet gallery](assets/pet-gallery.png?v=35-batch)
@@ -51,24 +82,7 @@
 
 Full animation previews are available in each pet's `assets/<pet-id>/` folder.
 
-## Quick Install
-
-Pick a pet id from the table above, then run:
-
-```bash
-PET_ID="yueyao"
-curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/${PET_ID}.codex-pet.zip" -o "/tmp/${PET_ID}.codex-pet.zip" \
-  && mkdir -p "$HOME/.codex/pets/${PET_ID}" \
-  && unzip -o "/tmp/${PET_ID}.codex-pet.zip" -d "$HOME/.codex/pets/${PET_ID}"
-```
-
-If you cloned the repository locally, install from the checked-out files:
-
-```bash
-PET_ID="yueyao"
-mkdir -p "$HOME/.codex/pets/${PET_ID}" \
-  && cp "pets/${PET_ID}/pet.json" "pets/${PET_ID}/spritesheet.webp" "$HOME/.codex/pets/${PET_ID}/"
-```
+<a id="readme-section-4"></a>
 
 ## Select The Pet
 
@@ -100,21 +114,37 @@ flowchart LR
   G --> H["Run /pet"]
 ```
 
-## Screenshots
+<a id="readme-section-5"></a>
 
-Annotated screenshots live in [docs](docs/).
+## Repository map
 
-## Contributing
+| Entry | Contents |
+| --- | --- |
+| [`assets/`](assets/) | Images and static assets |
+| [`docs/`](docs/) | Project documentation and references |
+| [`packages/`](packages/) | Reusable packages |
+| [`pets/`](pets/) | Pet packs |
+| [`scripts/`](scripts/) | Development and maintenance scripts |
 
-Pet packs, previews, and documentation improvements are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/MAINTAINING.md](docs/MAINTAINING.md) before opening a pull request.
+<a id="readme-section-6"></a>
 
 ## Security
 
 Please do not open a public issue for sensitive reports. See [SECURITY.md](SECURITY.md).
 
+<a id="readme-section-7"></a>
+
+## Contributing
+
+Pet packs, previews, and documentation improvements are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/MAINTAINING.md](docs/MAINTAINING.md) before opening a pull request.
+
+<a id="readme-section-8"></a>
+
 ## License
 
 MIT
+
+<a id="readme-section-9"></a>
 
 ## Author
 
