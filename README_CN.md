@@ -7,6 +7,37 @@
 
 [English](README.md)
 
+[截图说明](#readme-section-1) · [快速安装](#readme-section-2) · [宠物](#readme-section-3) · [仓库导航](#readme-section-5) · [安全](#readme-section-6) · [贡献](#readme-section-7) · [许可证](#readme-section-8)
+
+<a id="readme-section-1"></a>
+
+## 截图说明
+
+带标注的截图放在 [docs](docs/) 目录。
+
+<a id="readme-section-2"></a>
+
+## 快速安装
+
+从上方表格选择一个宠物 id，然后运行：
+
+```bash
+PET_ID="yueyao"
+curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/${PET_ID}.codex-pet.zip" -o "/tmp/${PET_ID}.codex-pet.zip" \
+  && mkdir -p "$HOME/.codex/pets/${PET_ID}" \
+  && unzip -o "/tmp/${PET_ID}.codex-pet.zip" -d "$HOME/.codex/pets/${PET_ID}"
+```
+
+如果你已经克隆了这个仓库，也可以从本地文件安装：
+
+```bash
+PET_ID="yueyao"
+mkdir -p "$HOME/.codex/pets/${PET_ID}" \
+  && cp "pets/${PET_ID}/pet.json" "pets/${PET_ID}/spritesheet.webp" "$HOME/.codex/pets/${PET_ID}/"
+```
+
+<a id="readme-section-3"></a>
+
 ## 宠物
 
 ![Codex 宠物宫格](assets/pet-gallery-cn.png?v=35-batch)
@@ -51,24 +82,7 @@
 
 每个宠物的完整动画预览可在对应的 `assets/<pet-id>/` 目录查看。
 
-## 快速安装
-
-从上方表格选择一个宠物 id，然后运行：
-
-```bash
-PET_ID="yueyao"
-curl -L "https://raw.githubusercontent.com/mileson/codex-pets/main/packages/${PET_ID}.codex-pet.zip" -o "/tmp/${PET_ID}.codex-pet.zip" \
-  && mkdir -p "$HOME/.codex/pets/${PET_ID}" \
-  && unzip -o "/tmp/${PET_ID}.codex-pet.zip" -d "$HOME/.codex/pets/${PET_ID}"
-```
-
-如果你已经克隆了这个仓库，也可以从本地文件安装：
-
-```bash
-PET_ID="yueyao"
-mkdir -p "$HOME/.codex/pets/${PET_ID}" \
-  && cp "pets/${PET_ID}/pet.json" "pets/${PET_ID}/spritesheet.webp" "$HOME/.codex/pets/${PET_ID}/"
-```
+<a id="readme-section-4"></a>
 
 ## 在 Codex 里选择宠物
 
@@ -100,21 +114,37 @@ flowchart LR
   G --> H["输入 /pet"]
 ```
 
-## 截图说明
+<a id="readme-section-5"></a>
 
-带标注的截图放在 [docs](docs/) 目录。
+## 仓库导航
 
-## 贡献
+| 入口 | 内容 |
+| --- | --- |
+| [`assets/`](assets/) | 项目图片与静态素材 |
+| [`docs/`](docs/) | 项目说明与参考文档 |
+| [`packages/`](packages/) | 可复用内部模块 |
+| [`pets/`](pets/) | 宠物资源包 |
+| [`scripts/`](scripts/) | 开发与维护脚本 |
 
-欢迎提交新的宠物包、预览图和文档改进。提交前请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [docs/MAINTAINING.md](docs/MAINTAINING.md)。
+<a id="readme-section-6"></a>
 
 ## 安全
 
 如果要报告敏感问题，请不要发公开 issue。请查看 [SECURITY.md](SECURITY.md)。
 
+<a id="readme-section-7"></a>
+
+## 贡献
+
+欢迎提交新的宠物包、预览图和文档改进。提交前请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [docs/MAINTAINING.md](docs/MAINTAINING.md)。
+
+<a id="readme-section-8"></a>
+
 ## 许可证
 
 MIT
+
+<a id="readme-section-9"></a>
 
 ## 作者
 
