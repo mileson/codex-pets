@@ -1,23 +1,49 @@
-# Codex Pets
+<a id="codex-pets"></a>
 
-> Codex Desktop 自定义宠物合集。
+<div align="center">
 
+# Codex Pets · 桌面宠物合集
+
+**挑选喜欢的宠物资源，安装后在 Codex Desktop 中切换。**
+
+宠物预览 · 资源安装 · 桌面选择 · 素材管理
+
+[![中文说明](https://img.shields.io/badge/%E8%AF%B4%E6%98%8E-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-059669)](#readme-detail-11)
+[![项目类型](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE-%E8%B5%84%E6%BA%90-6366f1)](#readme-detail-11)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Pets](https://img.shields.io/badge/pets-35-blue.svg)](#宠物)
 
+[👀 截图与效果说明](#readme-detail-11) · [✅ 适用场景](#readme-detail-audience) · [🚀 快速安装](#readme-detail-13) · [🧩 模块速查](#readme-detail-19) · [🔒 安全](#readme-detail-21) · [🐾 宠物一览](#readme-detail-15)
 
+</div>
 
-[截图说明](#readme-section-1) · [快速安装](#readme-section-2) · [宠物](#readme-section-3) · [仓库导航](#readme-section-5) · [安全](#readme-section-6) · [贡献](#readme-section-7) · [许可证](#readme-section-8)
+---
+
+> Codex Desktop 自定义宠物合集。
 
 <a id="readme-section-1"></a>
 
-## 截图说明
+<a id="截图说明"></a>
+
+<a id="readme-detail-11"></a>
+
+## 👀 截图与效果说明
 
 带标注的截图放在 [docs](docs/) 目录。
 
+<a id="readme-detail-audience"></a>
+
+## ✅ 适用场景
+
+适合想使用或贡献 Codex Desktop 宠物的读者。
+
 <a id="readme-section-2"></a>
 
-## 快速安装
+<a id="快速安装"></a>
+
+<a id="readme-detail-13"></a>
+
+## 🚀 快速安装
 
 从上方表格选择一个宠物 id，然后运行：
 
@@ -38,7 +64,11 @@ mkdir -p "$HOME/.codex/pets/${PET_ID}" \
 
 <a id="readme-section-3"></a>
 
-## 宠物
+<a id="宠物"></a>
+
+<a id="readme-detail-15"></a>
+
+## 🐾 宠物一览
 
 ![Codex 宠物宫格](assets/pet-gallery-cn.png?v=35-batch)
 
@@ -84,7 +114,11 @@ mkdir -p "$HOME/.codex/pets/${PET_ID}" \
 
 <a id="readme-section-4"></a>
 
-## 在 Codex 里选择宠物
+<a id="在-codex-里选择宠物"></a>
+
+<a id="readme-detail-17"></a>
+
+## 🐾 在 Codex 中选择宠物
 
 安装后按这个流程操作：
 
@@ -116,37 +150,59 @@ flowchart LR
 
 <a id="readme-section-5"></a>
 
-## 仓库导航
+<a id="仓库导航"></a>
 
-| 入口 | 内容 |
-| --- | --- |
-| [`assets/`](assets/) | 项目图片与静态素材 |
-| [`docs/`](docs/) | 项目说明与参考文档 |
-| [`packages/`](packages/) | 可复用内部模块 |
-| [`pets/`](pets/) | 宠物资源包 |
-| [`scripts/`](scripts/) | 开发与维护脚本 |
+<a id="readme-detail-19"></a>
+
+## 🧩 模块速查
+
+按要处理的工作选择入口，先看模块职责，再进入对应文件或目录。
+
+| 模块入口 | 负责什么 | 什么时候看 |
+| --- | --- | --- |
+| [`assets/`](assets/) | 项目图片与静态素材 | 维护图片、静态文件和展示素材 |
+| [`docs/`](docs/) | 项目说明与参考文档 | 查阅运行、设计与维护约定 |
+| [`packages/`](packages/) | 可复用内部模块 | 接入或维护对应的客户端与共享模块 |
+| [`pets/`](pets/) | 宠物资源包 | 按当前职责查阅实现及目录内说明 |
+| [`scripts/`](scripts/) | 开发与维护脚本 | 查找构建、验证或维护的现有命令 |
 
 <a id="readme-section-6"></a>
 
-## 安全
+<a id="安全"></a>
+
+<a id="readme-detail-21"></a>
+
+## 🔒 安全
 
 如果要报告敏感问题，请不要发公开 issue。请查看 [SECURITY.md](SECURITY.md)。
 
 <a id="readme-section-7"></a>
 
-## 贡献
+<a id="贡献"></a>
+
+<a id="readme-detail-23"></a>
+
+## 🤝 贡献
 
 欢迎提交新的宠物包、预览图和文档改进。提交前请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [docs/MAINTAINING.md](docs/MAINTAINING.md)。
 
 <a id="readme-section-8"></a>
 
-## 许可证
+<a id="许可证"></a>
+
+<a id="readme-detail-25"></a>
+
+## 📄 许可证
 
 MIT
 
 <a id="readme-section-9"></a>
 
-## 作者
+<a id="作者"></a>
+
+<a id="readme-detail-27"></a>
+
+## 👤 作者
 
 - X: [Mileson07](https://x.com/Mileson07)
 - 小红书: [超级峰](https://xhslink.com/m/4LnJ9aB1f97)
