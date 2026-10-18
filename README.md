@@ -163,7 +163,7 @@ flowchart LR
 | [`assets/`](assets/) | 项目图片与静态素材 | 维护图片、静态文件和展示素材 |
 | [`docs/`](docs/) | 项目说明与参考文档 | 查阅运行、设计与维护约定 |
 | [`packages/`](packages/) | 可复用内部模块 | 接入或维护对应的客户端与共享模块 |
-| [`pets/`](pets/) | 宠物资源包 | 按当前职责查阅实现及目录内说明 |
+| [`pets/`](pets/) | Codex Desktop 宠物资源包 | 挑选宠物或检查对应资源文件 |
 | [`scripts/`](scripts/) | 开发与维护脚本 | 查找构建、验证或维护的现有命令 |
 
 <a id="readme-section-6"></a>
